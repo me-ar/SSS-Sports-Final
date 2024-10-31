@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import Details from './Pages/Details';
 import AvailableSpaces from './Pages/AvailableSpacesSection';
+import About from './Pages/About'
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/details" element={<Details />} />
         <Route path="/spaces" element={<AvailableSpaces />} />
-        <Route path="/about" element={<AvailableSpaces />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

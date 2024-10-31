@@ -2,12 +2,15 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-start justify-center min-h-screen bg-white mx-[200px] mt-[-100px] ">
-      <h1 className="text-[100px] font-extrabold text-black-600 font-montserrat">RENT THE SPACE</h1>
-      <p className="text-[70px] text-black-700 text-lg font-montserrat font-bold">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white px-5 text-center">
+      <h1 className="text-[80px] font-extrabold text-black font-montserrat">
+        RENT THE SPACE
+      </h1>
+      <p className="text-[50px] text-black font-montserrat font-bold">
         for your favourite sport
       </p>
-      <div className="space-x-4">
+      <div className="space-x-4 mt-4">
+        {/* Add any additional buttons or content here */}
       </div>
     </div>
   );

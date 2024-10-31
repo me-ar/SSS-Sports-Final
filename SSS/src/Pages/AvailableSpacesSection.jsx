@@ -13,17 +13,19 @@ const spaceData = [
 
 function AvailableSpaces() {
   return (
-    <main className="flex overflow-hidden overflow-x-auto flex-col justify-center items-start px-20 py-28 bg-white max-md:px-5 max-md:pb-24">
-      <div className="flex flex-col w-full max-w-[1087px] max-md:max-w-full">
-        <h1 className="self-start text-7xl font-bold text-center text-black max-md:max-w-full max-md:text-4xl">
+    <main className="flex items-center justify-center min-h-screen px-5 py-10 bg-white">
+      <div className="flex flex-col w-full max-w-[1087px] text-center">
+        <h1 className="text-4xl font-bold font-montserrat text-black max-md:text-3xl">
           Available spaces:
         </h1>
-        <section className="flex flex-wrap gap-10 mt-14 max-md:mt-10 max-md:max-w-full">
+        <section className="flex flex-wrap gap-10 justify-center mt-10">
           {spaceData.map((space, index) => (
             <SpaceButton key={index} icon={space.icon} alt={space.alt} label={space.label} />
           ))}
         </section>
-        <BookingButton />
+        <div className="mt-10 flex flex-col">
+          <BookingButton />
+        </div>
       </div>
     </main>
   );

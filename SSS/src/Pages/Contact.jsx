@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,15 +18,31 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' });
+
+    // EmailJS parameters
+    const serviceID = 'your_service_id';
+    const templateID = 'your_template_id';
+    const userID = 'your_user_id';
+
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then(
+        (response) => {
+          console.log('Email sent successfully:', response.status, response.text);
+          alert('Message sent successfully!');
+          setFormData({ name: '', email: '', message: '' }); // Reset form
+        },
+        (error) => {
+          console.error('Failed to send the email:', error);
+          alert('Failed to send message. Please try again.');
+        }
+      );
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <h2 className="text-3xl font-semibold text-blue-600 mb-6">Contact Us</h2>
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-full max-w-md">
+      <form onSubmit={handleSubmit} className="bg-gray-200 shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-full max-w-md">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name
