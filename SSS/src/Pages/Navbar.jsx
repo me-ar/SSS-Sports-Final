@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Logo } from '../../public/assets'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,25 +10,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-500 shadow-md">
+    <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="text-white text-xl font-bold">
-              MyLogo
+          <div className="flex-shrink-0 flex items-center justify-start">
+            <Link to="/" className="text-black text-xl font-bold">
+              <img src={`${Logo}`} alt="Mylogo" className='h-40 w-800 '/>
             </Link>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
-            <Link to="/" className="text-white hover:text-gray-300">
+            <Link to="/" className="text-black-500 font-bold hover:text-gray-300">
               Home
             </Link>
-            <Link to="/about" className="text-white hover:text-gray-300">
-              About
+            <Link to="/spaces" className="text-black-300 font-bold hover:text-gray-300">
+              Spaces
             </Link>
-            <Link to="/services" className="text-white hover:text-gray-300">
-              Services
+            <Link to="/about" className="text-black-300 font-bold hover:text-gray-300">
+            About
             </Link>
-            <Link to="/contact" className="text-white hover:text-gray-300">
+            <Link to="/contact" className="text-black-300 font-bold hover:text-gray-300">
               Contact
             </Link>
           </div>
