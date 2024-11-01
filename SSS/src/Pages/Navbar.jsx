@@ -11,15 +11,15 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-3 lg:px-0">
+        <div className="flex justify-between h-40">
           <div className="flex-shrink-0 flex items-center justify-start">
-            <Link to="/" className="text-black font-bold">
+            <Link to="/" className="text-blue font-bold">
               <img src={`${Logo}`} alt="Mylogo" className='h-[300px] w-[300px] '/>
             </Link>
           </div>
           <div className="hidden md:flex space-x-4 items-center text-[30px]">
-            <Link to="/" className="text-black-500 font-bold hover:text-gray-300">
+            <Link to="/" className="text-navy-blue-500 font-bold hover:text-gray-300">
               Home
             </Link>
             <Link to="/spaces" className="text-black-300 font-bold hover:text-gray-300">

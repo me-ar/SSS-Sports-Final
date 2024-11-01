@@ -15,7 +15,7 @@ function AvailableSpaces() {
   return (
     <main className="flex items-center justify-center min-h-screen px-5 py-10 bg-white">
       <div className="flex flex-col w-full max-w-[1087px] text-center">
-        <h1 className="text-4xl font-bold font-montserrat text-black max-md:text-3xl">
+        <h1 className="text-6xl font-extrabold font-montserrat text-black max-md:text-3xl">
           Available spaces:
         </h1>
         <section className="flex flex-wrap gap-10 justify-center mt-10">
