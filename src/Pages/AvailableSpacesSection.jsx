@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BookingButton from './BookingButton';
+import Modal from './Modal';
 
 function SpaceButton({ icon, alt, label, onClick }) {
   return (
@@ -45,15 +46,11 @@ function AvailableSpaces() {
         
         {/* Display the selected image if any button is clicked */}
         {selectedImage && (
-          <div className="mt-10">
-          <img src={selectedImage} alt="Selected space" className="w-80 h-50 max-w-[600px] rounded-lg shadow-md" />
-          <button 
-            className="mt-6 px-4 py-2 bg-red-500 text-white rounded" 
-            onClick={() => setSelectedImage(null)}
-          >
-            Close
-          </button>
-        </div>
+          <Modal
+          imageSrc={selectedImage}
+          alt="Selected space"
+          onClose={() => setSelectedImage(null)}
+        />
         )}
 
         <div className="mt-10 flex flex-col items-center justify-center w-full max-w-md mx-auto">
