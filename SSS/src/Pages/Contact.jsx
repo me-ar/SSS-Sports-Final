@@ -20,9 +20,9 @@ const Contact = () => {
     e.preventDefault();
 
     // EmailJS parameters
-    const serviceID = 'your_service_id';
-    const templateID = 'your_template_id';
-    const userID = 'your_user_id';
+    const serviceID = 'service_gotua3p';
+    const templateID = 'template_dyibg2k';
+    const userID = 'Adesh';
 
     emailjs
       .send(serviceID, templateID, formData, userID)
