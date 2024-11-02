@@ -9,7 +9,7 @@ function BookingButton() {
     <div className="flex flex-col">
       <button
         onClick={() => window.open(`https://wa.me/+919840203712?text=${whatsappMessage}`, '_blank')}
-        className="self-center px-12 py-1.5 mt-20 max-w-full text-5xl font-bold text-center text-white bg-green-400 rounded-[40px] w-[403px] max-md:px-5 max-md:mt-10 max-md:text-4xl hover:bg-white hover:border-green-400 hover:text-green-400"
+        className="self-center px-12 py-1.5 mt-20 max-w-full text-5xl font-bold text-center text-white bg-green-400 rounded-[40px] w-[340px] max-md:px-5 max-md:mt-10 max-md:text-4xl hover:bg-white hover:border-green-400 hover:text-green-400"
       >
         Book Now
       </button>
