@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-gray-300 focus:outline-none"
+              className="text-black hover:text-gray-300 focus:outline-none"
             >
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -51,16 +51,16 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1">
-          <Link to="/" className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
+          <Link to="/" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             Home
           </Link>
-          <Link to="/about" className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
+          <Link to="/about" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             About
           </Link>
-          <Link to="/services" className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
+          <Link to="/services" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             Services
           </Link>
-          <Link to="/contact" className="block text-white hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
+          <Link to="/contact" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             Contact
           </Link>
         </div>
