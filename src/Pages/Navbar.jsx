@@ -54,11 +54,11 @@ const Navbar = () => {
           <Link to="/" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             Home
           </Link>
+          <Link to="/spaces" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
+            Spaces
+          </Link>
           <Link to="/about" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             About
-          </Link>
-          <Link to="/services" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
-            Services
           </Link>
           <Link to="/contact" className="block text-black hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium">
             Contact
