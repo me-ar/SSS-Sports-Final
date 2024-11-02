@@ -14,7 +14,7 @@ function SpaceButton({ icon, alt, label, onClick }) {
 }
 
 const spaceData = [
-  { icon: "./public/assets/football.png", alt: "Football icon", label: "Football", asset: "/assets/display button football.jpg" },
+  { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/6cd648f5e56326a489d56b9cee05f37588fb61dac822edfc13ff27094137a036?placeholderIfAbsent=true&apiKey=255c12830b254ce88f1fb2f0fec3dd68", alt: "Football icon", label: "Football", asset: "/assets/display button football.jpg" },
   { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/b5b1c5765ef65d96583a3d776e50572952ef36728a34966232ec3d3a8162fced?placeholderIfAbsent=true&apiKey=255c12830b254ce88f1fb2f0fec3dd68", alt: "Cricket icon", label: "Cricket Nets", asset: "/assets/display button crick net.jpg" },
   { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/273c5f62c132f3faa4ceb4f4ef4e278c9d7ad182a7d3d92e8485ab0a68f46735?placeholderIfAbsent=true&apiKey=255c12830b254ce88f1fb2f0fec3dd68", alt: "Table Tennis icon", label: "Table Tennis", asset: "/assets/display button tt.jpg" },
   { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/8ae7d48eee36d3a43dbfea0bfc4addc8cd64dbad5140dc4bd20bd7aa8d708419?placeholderIfAbsent=true&apiKey=255c12830b254ce88f1fb2f0fec3dd68", alt: "Badminton icon", label: "Badminton", asset: "/assets/display button badminton.jpg" },
